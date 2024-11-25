@@ -1,156 +1,167 @@
-/* Reset general */
+/* Reset general: elimina márgenes, rellenos y establece un modelo de caja consistente */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo general */
+/* Estilo general para el cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    color: #000000;
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    color: #000000; /* Color del texto */
 }
 
-/* Encabezado */
+/* Encabezado: estilos generales del header */
 header {
-    background-color: #ffffff36;
-    color: #000000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    background-color: #ffffff36; /* Fondo blanco semi-transparente */
+    color: #000000; /* Texto negro */
+    display: flex; /* Uso de flexbox para organizar contenido en fila */
+    justify-content: space-between; /* Espacio uniforme entre elementos */
+    align-items: center; /* Centra elementos verticalmente */
+    padding: 10px 20px; /* Espaciado interno */
 }
 
+/* Logo dentro del encabezado */
 .logo img {
-    max-width: 100px; /* Tamaño deseado del logo */
-    height: auto;
-    border-radius: 50%; /* Redondea la imagen */
-    overflow: hidden; /* Asegura que la imagen quede dentro de los bordes redondeados */
-    text-align: right;
+    max-width: 100px; /* Tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    overflow: hidden; /* Evita que contenido exceda los bordes redondeados */
+    text-align: right; /* Alinea el texto del logo a la derecha */
 }
 
+/* Título del encabezado */
 header h1 {
-    margin-left: 10px;
-    font-size: 1.5em;
+    margin-left: 10px; /* Espaciado a la izquierda del título */
+    font-size: 1.5em; /* Tamaño del texto */
 }
 
+/* Barra de navegación: configuración básica de la lista */
 .barra-navegacion ul {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Sin viñetas */
+    display: flex; /* Alinea los elementos en una fila */
 }
 
+/* Estilo de los enlaces de navegación */
 .barra-navegacion a {
-    color: #000000;
-    margin: 0 30px;
-    text-decoration: none;
-    font-weight: bold;
+    color: #000000; /* Texto negro */
+    margin: 0 30px; /* Espaciado horizontal entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
 }
 
+/* Efecto hover en los enlaces de navegación */
 .barra-navegacion a:hover {
-    color: #000000;
+    color: #000000; /* Mantiene el color al pasar el ratón (puedes cambiarlo para mayor impacto visual) */
 }
 
-/* Banner */
+/* Banner principal de la página */
 .banner {
-    height: 68vh;
-    background-image: url('imagenes/imagen-portada.webp');
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    text-align: center;
+    height: 68vh; /* Altura del 68% de la ventana */
+    background-image: url('imagenes/imagen-portada.webp'); /* Imagen de fondo */
+    display: flex; /* Flexbox para alinear contenido */
+    align-items: center; /* Centrado vertical del contenido */
+    justify-content: center; /* Centrado horizontal del contenido */
+    color: #000000; /* Texto negro */
+    text-align: center; /* Centra el texto */
 }
 
-
-.banner h2{
-    font-size: 3em;
+/* Título principal dentro del banner */
+.banner h2 {
+    font-size: 3em; /* Texto grande */
     background-color: rgba(240, 230, 220, 0.377); /* Fondo semi-transparente */
     border-radius: 8px; /* Bordes redondeados */
 }
+
+/* Estilo para el eslogan dentro del banner */
 .eslogan {
-    font-size: 1.5em; /* Tamaño de la fuente */
-    color: #000000; /* Color del texto */
+    font-size: 1.5em; /* Tamaño de fuente */
+    color: #000000; /* Texto negro */
     font-style: italic; /* Texto en cursiva */
     font-weight: bold; /* Texto en negrita */
     text-align: center; /* Centra el texto */
-    margin-top: 10px; /* Espacio superior */
-    padding: 5px 10px; /* Espacio interno */
+    margin-top: 10px; /* Espaciado superior */
+    padding: 5px 10px; /* Espaciado interno */
     background-color: rgba(240, 230, 220, 0.377); /* Fondo semi-transparente */
     border-radius: 8px; /* Bordes redondeados */
     display: inline-block; /* Ajusta el tamaño al contenido */
 }
 
-
-/* Introducción */
+/* Introducción: centra y estiliza el texto */
 .breve-introduccion {
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Texto centrado */
 }
 
+/* Título de la sección de introducción */
 .breve-introduccion h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2.5em; /* Tamaño grande del título */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
+/* Párrafo dentro de la introducción */
 .breve-introduccion p {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1.3em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.8;
+    max-width: 600px; /* Limita el ancho del párrafo */
+    margin: 0 auto; /* Centra horizontalmente */
+    font-size: 1.3em; /* Tamaño del texto */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fuente alternativa */
+    line-height: 1.8; /* Mejora la legibilidad */
 }
 
-/* Sección de productos */
+/* Sección de productos: distribución horizontal */
 #productos {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    width: 100%;
-    height: 50%;
-}
-.imagen-inicio{/* imagenes de inicio */
-    width: 550px;
-    height: 500px;
-}
-.imagen-producto{
-    width: 300px;
-    height: 300px;
+    display: flex; /* Flexbox para organizar elementos en fila */
+    justify-content: space-around; /* Distribuye uniformemente los elementos */
+    padding: 20px; /* Espaciado interno */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 50%; /* Altura específica */
 }
 
+/* Tamaño de las imágenes en la sección de inicio */
+.imagen-inicio {
+    width: 550px; /* Ancho fijo */
+    height: 500px; /* Altura fija */
+}
 
+/* Tamaño de las imágenes de producto */
+.imagen-producto {
+    width: 300px; /* Ancho fijo */
+    height: 300px; /* Altura fija */
+}
+
+/* Categorías (hombre/mujer): fondo con imagen, bordes y texto centrado */
 .categoria-mujer, .categoria-hombre {
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 20px;
-    width: 600px;
-    height: 500px;
-    text-align: center;
-    background-image: url("imagenes/mujer.avif");
-    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-color: #f4f4f4; /* Fondo gris claro (opcional si hay imagen) */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 600px; /* Ancho fijo */
+    height: 500px; /* Altura fija */
+    text-align: center; /* Texto centrado */
+    background-size: cover; /* La imagen cubre todo el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    
-
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-size: 1.2em; /* Tamaño del texto */
 }
+
+/* Fondo específico para la categoría de mujer */
 .categoria-mujer {
     background-image: url("imagenes/mujer.avif");
 }
+
+/* Fondo específico para la categoría de hombre */
 .categoria-hombre {
     background-image: url("imagenes/la-perfumeria-arabe-superando-a-la-tradicional-con-estilo-y-fragancia.webp");
 }
 
-
-.categoria-mujer h3,.frase-categoria {
-    font-size: 1.5em;
-    color: #000000;
-    background-color: #ffffff53;
-    margin-top: 10px; 
-    padding: 5px 10px;
-    display: inline-block;
-    border-radius: 8px;
+/* Estilo de los textos destacados dentro de las categorías */
+.categoria-mujer h3, .frase-categoria {
+    font-size: 1.5em; /* Tamaño del texto */
+    color: #000000; /* Texto negro */
+    background-color: #ffffff53; /* Fondo semi-transparente */
+    margin-top: 10px; /* Espaciado superior */
+    padding: 5px 10px; /* Espaciado interno */
+    display: inline-block; /* Ajusta el tamaño al contenido */
+    border-radius: 8px; /* Bordes redondeados */
 }
 .categoria-hombre h3 {
     font-size: 1.5em;
@@ -162,105 +173,79 @@ header h1 {
     border-radius: 8px;  
 }
 
+/* Botón de acción dentro de las categorías */
 .boton {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-10%, +550%);
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #00000082;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 10px;
+    display: inline-block; /* Ajusta el tamaño al contenido */
+    justify-content: center; /* Centra horizontalmente (no aplica aquí por inline-block) */
+    align-items: center; /* Centra verticalmente (no aplica aquí por inline-block) */
+    transform: translate(-10%, +550%); /* Posicionamiento específico */
+    margin-top: 10px; /* Espaciado superior */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #00000082; /* Fondo negro semi-transparente */
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
+/* Efecto hover en los botones */
 .boton:hover {
-    background-color: #777575;
+    background-color: #777575; /* Cambia el fondo a gris */
 }
-/* Página de productos (hombre/mujer) */
+
+/* Página de productos (hombre/mujer): diseño en cuadrícula */
 section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    display: grid; /* Usa grid para disposición responsiva */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta columnas según el espacio */
+    gap: 20px; /* Espaciado entre elementos */
+    padding: 20px; /* Espaciado interno */
 }
 
-article {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-article img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-article h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-article .precio {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-article .precio-original {
-    text-decoration: line-through;
-    color: #888;
-}
-
-article .precio-oferta {
-    color: #e63946;
-    font-size: 1.1em;
-}
-
-/* Footer */
+/* Pie de página: estilos generales */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Espaciado interno */
+    font-size: 0.9em; /* Tamaño de texto pequeño */
+}
+/* Enlaces dentro del pie de página */
+footer a { 
+    color: #ddd; /* Color de texto gris claro */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
-footer a {
-    color: #ddd;
-    text-decoration: none;
-}
-
+/* Efecto hover en los enlaces del pie de página */
 footer a:hover {
-    color: #fff;
+    color: #fff; /* Cambia el color a blanco cuando el cursor pasa por encima */
 }
 
+/* Logo: configuración de su disposición */
 .logo {
-    display: flex; /* Hace que el logo y el texto estén en una sola línea */
+    display: flex; /* Utiliza flexbox para colocar logo y texto en una línea */
     align-items: center; /* Alinea verticalmente el logo y el texto */
 }
 
+/* Imagen del logo: ajustes de tamaño y estilo */
 .logo img {
-    max-width: 100px; /* Tamaño del logo */
-    height: auto;
-    border-radius: 50%; /* Logo redondeado */
+    max-width: 100px; /* Limita el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción original del logo */
+    border-radius: 50%; /* Hace que el logo sea redondo */
     margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
+/* Título del encabezado */
 header h1 {
-    font-size: 1.5em;
-    margin: 0; /* Evita que el texto tenga margen extra */
-}
-/* Página sobre nosotros*/
-.sobre-nosotros{
-    display: flexbox;
+    font-size: 1.5em; /* Tamaño de fuente para el título */
+    margin: 0; /* Elimina cualquier margen extra alrededor del título */
 }
 
-.sobre-nosotros h2{
-font-size: 20px; 
-font-weight: bold;
+/* Página "sobre nosotros": configuración de disposición */
+.sobre-nosotros {
+    display: flexbox; /* Usa flexbox para organizar los elementos */
+}
+
+/* Título dentro de la página "sobre nosotros" */
+.sobre-nosotros h2 {
+    font-size: 20px; /* Tamaño de la fuente para el título */
+    font-weight: bold; /* Hace que el texto sea negrita */
 }
