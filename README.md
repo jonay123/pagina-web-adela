@@ -30,5 +30,5 @@ Nuestra página web trata de una tienda online de perfumes Árabes.
   - Implementación del archivo `estilos.css`.
 
 - **Jonay**:
-  - Creación de las páginas de inicio (`inicio.html`) y contacto (`contacto.html`).
+  - Creación de las páginas de inicio (`inicio.html`) y contacto (`contacto.html`) y ('sobrenosotros.html').
   - Optimización de las imágenes utilizadas.
