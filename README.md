@@ -27,8 +27,9 @@ Nuestra página web trata de una tienda online de perfumes Árabes.
 
 - **Juan**:
   - Diseño de las páginas de productos (`mujer.html` y `hombre.html`).
-  - Implementación del archivo `estilos.css`.
+  - Implementación de algunos archivos `estilos.css`.
 
 - **Jonay**:
   - Creación de las páginas de inicio (`inicio.html`) y contacto (`contacto.html`) y ('sobrenosotros.html').
   - Optimización de las imágenes utilizadas.
+  - Implementación de algunos archivos 'estilos.css'.
