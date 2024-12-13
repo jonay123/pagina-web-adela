@@ -3,6 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+header {
+    background-color: #ffffff36; /* Fondo blanco semi-transparente */
+    color: #000000; /* Texto negro */
+    display: flex; /* Uso de flexbox para organizar contenido en fila */
+    justify-content: space-between; /* Espacio uniforme entre elementos */
+    align-items: center; /* Centra elementos verticalmente */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+/* Logo dentro del encabezado */
+.logo img {
+    max-width: 100px; /* Tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    overflow: hidden; /* Evita que contenido exceda los bordes redondeados */
+    text-align: right; /* Alinea el texto del logo a la derecha */
+}
+
+/* Título del encabezado */
+header h1 {
+    margin-left: 10px; /* Espaciado a la izquierda del título */
+    font-size: 1.5em; /* Tamaño del texto */
+}
+
+/* Barra de navegación: configuración básica de la lista */
+.barra-navegacion ul {
+    list-style: none; /* Sin viñetas */
+    display: flex; /* Alinea los elementos en una fila */
+}
+
+/* Estilo de los enlaces de navegación */
+.barra-navegacion a {
+    color: #000000; /* Texto negro */
+    margin: 0 30px; /* Espaciado horizontal entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Efecto hover en los enlaces de navegación */
+.barra-navegacion a:hover {
+    color: #000000; /* Mantiene el color al pasar el ratón (puedes cambiarlo para mayor impacto visual) */
+}
 body{
     font-family: sans-serif;
     margin: 0;
@@ -17,7 +59,7 @@ body{
     background: #24303c;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
@@ -63,4 +105,38 @@ body{
     margin: 16px 0;
     font-size: 16px;
 }
+/* Pie de página: estilos generales */
+footer {
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Espaciado interno */
+    font-size: 0.9em; /* Tamaño de texto pequeño */
+    margin-top: 20px;
+    
+}
 
+/* Enlaces dentro del pie de página */
+footer a { 
+    color: #ddd; /* Color de texto gris claro */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Efecto hover en los enlaces del pie de página */
+footer a:hover {
+    color: #fff; /* Cambia el color a blanco cuando el cursor pasa por encima */
+}
+
+/* Logo: configuración de su disposición */
+.logo {
+    display: flex; /* Utiliza flexbox para colocar logo y texto en una línea */
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+}
+
+/* Imagen del logo: ajustes de tamaño y estilo */
+.logo img {
+    max-width: 100px; /* Limita el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción original del logo */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
