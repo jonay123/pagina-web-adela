@@ -27,23 +27,19 @@
             <fieldset>
                 <legend>Regístrate</legend>
 
-                <div class="form-row">
+                <form class="form-row">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
 
                     <label for="apellido">Apellido:</label>
                     <input type="text" id="apellido" name="apellido" required>
-                </div>
-
-                <div class="form-row">
+                
                     <label for="telefono">Teléfono móvil:</label>
                     <input type="tel" id="telefono" name="telefono" pattern="^\+?\d{1,4}?[\d\s\-]{7,15}$" placeholder="Ejemplo: +34 612 345 678" required>
 
                     <label for="fecha_nacimiento">Fecha de nacimiento:</label>
                     <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-                </div>
 
-                <div class="form-row">
                     <label for="pais">País:</label>
                     <select id="pais" name="pais" required>
                         <option value="">Selecciona un país</option>
@@ -56,28 +52,25 @@
 
                     <label for="correo">Correo electrónico:</label>
                     <input type="email" id="correo" name="correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required placeholder="correo@dominio.com">
-                </div>
 
-                <div class="form-row">
                     <label for="contraseña">Contraseña:</label>
                     <div class="password-wrapper">
                         <input type="password" id="contraseña" name="contraseña" required>
                         <button type="button" class="eye-btn" onclick="togglePassword('contraseña', this)">👁️</button>
                     </div>
-                </div>
 
                 <!-- Campo de Confirmar Contraseña -->
-                <div class="form-row">
+        
                     <label for="confirmar_contraseña">Confirmar Contraseña:</label>
                     <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required>
-                </div>
 
-                <label>
+                    <label>
                     <input type="checkbox" id="politicas" name="politicas" required>
                     Acepto las <span class="politicas-enlace">políticas de privacidad</span>
-                </label>
+                    </label>
 
                 <button type="submit">Registrar</button>
+                </form>
             </fieldset>
         </form>
         <p class="inicia-sesion">
