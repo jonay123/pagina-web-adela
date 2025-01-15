@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/pepe.css">
+</head>
+<body>
+    <header><!-- Encabezado de la página con el logo y el menú de navegación -->
+        <div class="logo">
+            <img src="../imagenes\logo.png" alt="Logo de la página" class="logo">
+            <h1>Gipsy Arome</h1>
+        </div>
+       <label class="nav-toggle">
+        <input type="checkbox" id="menu-input" class="nav-input">
+    
+       </label>
+       <ul class="barra-navegacion">
+        <li class="nav-item"> <a href="../index.html" class="nav-link">INICIO</a></li>
+        <li class="nav-item"> <a href="paginas/" class="nav-link">INICIAR SECCIÓN / REGISTRARSE</a></li>   
+        <li class="nav-item"> <a href="hombre.html" class="nav-link">HOMBRE</a></li>
+        <li class="nav-item"> <a href="mujer.html" class="nav-link">MUJER</a></li>
+        <li class="nav-item"> <a href="sobrenosotros.html" class="nav-link">SOBRE NOSOTROS</a></li>
+        <li class="nav-item"> <a href="contacto.html" class="nav-link">CONTACTO</a></li>
+       </ul>
+    </header>
+    <fieldset class="formulario">
+        <legend><h1>Ayudanos a mejorar</h1></legend><!--este será el titulo de nuestro formulario-->
+        <form action="#" method="get" target="_blank">
+        <!--a continuación 5 preguntas básicas -->
+            <label class="primeras-preguntas" for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required><br>
+            <br><label class="primeras-preguntas" for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Escriba su apellido"><br>
+            <br><label class="primeras-preguntas" for="correo">correo electronico</label>
+            <input type="email" id="correo" name="correo" placeholder="Inserte un correo válido" required><br>
+            <br><label class="primeras-preguntas" for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Inserte un numero de teléfono"><br>
+           <br> <label class="primeras-preguntas" for="favorito">¿cuál es tu fragancia favorita?</label>
+            <input type="text" id="favorito" name="favorito" placeholder="Escriba el nombre de alguna fragancia"><br>
+        <!--a continuación 3 preguntas que se puntuaran de 1 estrella (como lo más bajo) a 5 estrellas(como lo más alto)-->
+            <br><label for="pregunta1">¿Que tan satisfecho se siente con nuestra variedad de productos?</label>
+                <input type="radio" id="estrella-1" name="valoracion1" value="1">
+                <label for="estrella-1">1★</label>
+                <input type="radio" id="estrella-2" name="valoracion1" value="2">
+                <label for="estrella-2">2★</label>
+                <input type="radio" id="estrella-3" name="valoracion1" value="3">
+                <label for="estrella-3">3★</label>
+                <input type="radio" id="estrella-4" name="valoracion1" value="4">
+                <label for="estrella-4">4★</label>
+                <input type="radio" id="estrella-5" name="valoracion1" value="5">
+                <label for="estrella-5">5★</label><br>
+            <br><label for="pregunta2">¿Cómo calificaría la atención recibida por nuestro personal?</label>
+                <input type="radio" id="estrella-21" name="valoracion2" value="1">
+                <label for="estrella-21">1★</label>
+                <input type="radio" id="estrella-22" name="valoracion2" value="2">
+                <label for="estrella-22">2★</label>
+                <input type="radio" id="estrella-23" name="valoracion2" value="3">
+                <label for="estrella-23">3★</label>
+                <input type="radio" id="estrella-24" name="valoracion2" value="4">
+                <label for="estrella-24">4★</label>
+                <input type="radio" id="estrella-25" name="valoracion2" value="5">
+                <label for="estrella-25">5★</label><br>
+            <br><label for="pregunta3">¿Como calificaría la calidad de nuestros productos?</label>
+                <input type="radio" id="estrella-31" name="valoracion3" value="1">
+                <label for="estrella-31">1★</label>
+                <input type="radio" id="estrella-32" name="valoracion3" value="2">
+                <label for="estrella-32">2★</label>
+                <input type="radio" id="estrella-33" name="valoracion3" value="3">
+                <label for="estrella-33">3★</label>
+                <input type="radio" id="estrella-34" name="valoracion3" value="4">
+                <label for="estrella-34">4★</label>
+                <input type="radio" id="estrella-35" name="valoracion3" value="5">
+                <label for="estrella-35">5★</label><br>
+        <!--a continuación 1 pregunta de múltiple respuesta-->    
+            <br><label for="pregunta4">¿qué tipo de perfumes prefieres?</label>
+            <input type="checkbox" id="florales" name="florales" value="si">
+            <label for="florales">Florales</label><br>
+            <input type="checkbox" id="amaderados" name="Amaderados" value="si">
+            <label for="amaderados">Amaderados</label><br>
+            <input type="checkbox" id="citricos"name="citricos" value="si">
+            <label for="citricos">Cítricos</label><br>
+            <input type="checkbox" id="dulces" name="dulces" value="si">
+            <label for="dulces">Dulces</label><br>
+            <input type="checkbox" id="afrutados" name="afrutados" value="si">
+            <label for="afrutados">Afrutados</label> <br>
+            <input type="checkbox" id="atalcados" name="atalcados" value="si">
+            <label for="atalcados">Atalcados</label> <br>
+            <input type="checkbox" id="suaves" name="suaves" value="si">
+            <label for="suaves">Suaves</label><br>
+            <input type="checkbox" id="intensos" name="intensos" value="si">
+            <label for="intensos">Intensos</label><br>
+        <!--a continuación 1 campo para poder poner un comentario o mensaje-->
+            <br><label for="comentario">Comentario/Mensaje</label>
+            <textarea id="comentario" name="Comentario" placeholder="Comentario"></textarea> 
+        <!--a continuación el boton para enviar las respuestas del formulario-->    
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>            
+</body>
+</html>

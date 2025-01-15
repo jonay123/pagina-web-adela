@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
     <header><!-- Encabezado de la página con el logo y el menú de navegación -->
+        
         <div class="logo">
             <img src="imagenes\logo.png" alt="Logo de la página" class="logo">
             <h1>Gipsy Arome</h1>
         </div>
-        <nav class="barra-navegacion"><!-- menú de navegación para enlazar las demás páginas-->
-            <ul>
-                <a href="inicio.html">INICIO</a>
-                <a href=""></a>
-                <a href="mujer.html">MUJER</a>
-                <a href="hombre.html">HOMBRE</a>
-                <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-                <a href="contacto.html">CONTACTO</a>
-            </ul>
-        </nav>
+       <label class="nav-toggle">
+        <input type="checkbox" id="menu-input" class="nav-input">
+       </label>
+       <ul class="barra-navegacion">
+        <li class="nav-item"> <a href="paginas/inicio.html" class="nav-link">INICIO</a></li>
+        <li class="nav-item"> <a href="paginas/" class="nav-link">INICIAR SECCIÓN / REGISTRARSE</a></li>         
+        <li class="nav-item"> <a href="paginas/hombre.html" class="nav-link">HOMBRE</a></li>
+        <li class="nav-item"> <a href="paginas/mujer.html" class="nav-link">MUJER</a></li>
+        <li class="nav-item"> <a href="paginas/sobrenosotros.html" class="nav-link">SOBRE NOSOTROS</a></li>
+        <li class="nav-item"> <a href="paginas/contacto.html" class="nav-link">CONTACTO</a></li>
+       </ul>
     </header>
     <main class="fondo"><!--este main contiene una portada, una breve introducción sobre el tema de la web y una parte que cataloga las categorías de perfumes que hay-->
         <section class="banner"><!--Portada-->
@@ -42,12 +44,12 @@
                 <div class="categoria-mujer">
                     <h3>Mujer</h3><br>
                     <p class="frase-categoria">Fragancias exclusivas para ella</p> 
-                    <a href="mujer.html" class="boton">Ver productos</a>
+                    <a href="paginas/mujer.html" class="boton">Ver productos</a>
                 </div>
                 <div class="categoria-hombre">
                     <h3>Hombre</h3><br>
                     <p class="frase-categoria">Fragancias exclusivas para él</p> 
-                    <a href="hombre.html" class="boton">Ver productos</a>
+                    <a href="paginas/hombre.html" class="boton">Ver productos</a>
                 </div>
             </div>
         </section>
@@ -61,3 +63,4 @@
         </div>
     </footer>
 </body>
+</html>

@@ -1,0 +1,278 @@
+/* Reset general: elimina márgenes, rellenos y establece un modelo de caja consistente */
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    color: #000000; /* Color del texto */
+   background-color: #333;
+}
+
+/* Estilo general para el cuerpo del documento */
+header{
+    background-color: white;
+    header {
+        background-color: white; /* Fondo blanco semi-transparente */
+        color: #000000; /* Texto negro */
+        display: flex; /* Uso de flexbox para organizar contenido en fila */
+        justify-content: space-between; /* Espacio uniforme entre elementos */
+        align-items: center; /* Centra elementos verticalmente */
+        flex-direction: column;
+        width: 100%;
+    }
+   padding-bottom: 2rem;
+}
+
+/* Encabezado: estilos generales del header */
+ul.barra-navegacion {
+    
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinea horizontalmente */
+    justify-content: center;
+    font-weight: bold;
+    
+  }
+  
+  ul.barra-navegacion li {
+    margin: 0 10px; /* Espaciado entre los elementos */
+    margin-top: 1rem;
+   
+    
+  }
+  
+  ul.barra-navegacion a {
+    
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: black; /* Ajusta el color del texto */
+    padding: 8px 12px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animación suave */
+    
+   
+  }
+
+/* Logo dentro del encabezado */
+.logo img {
+    max-width: 100px; /* Tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    overflow: hidden; /* Evita que contenido exceda los bordes redondeados */
+    text-align: right; /* Alinea el texto del logo a la derecha */
+}
+/* Logo: configuración de su disposición */
+.logo {
+    display: flex; /* Utiliza flexbox para colocar logo y texto en una línea */
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    
+}
+
+/* Imagen del logo: ajustes de tamaño y estilo */
+.logo img {
+    max-width: 100px; /* Limita el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción original del logo */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+ul.barra-navegacion a:hover {
+    background-color: #C9A270; /* Champán oscuro */
+    color: white; /* Opcional: Cambia el color del texto */
+  }
+
+  .nav-input{
+    display: none;
+  }
+
+/* Estilo para la sección sobre nosotros */
+.sobre-nosotros {
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.sobre-nosotros h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sobre-nosotros p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    max-width: 70%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
+    color: #b6b6b6;
+    
+}
+
+
+
+/* Estilo para el encabezado de la portada */
+.nosotros {
+    background-image: url("../imagenes/fondo-negro.png");
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2px;
+}
+
+.nosotros h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    main {
+        padding-top: 20px;
+    }
+
+    .sobre-nosotros {
+        padding: 20px;
+    }
+
+    .nosotros h1 {
+        font-size: 28px;
+    }
+
+    .sobre-nosotros h2 {
+        font-size: 24px;
+    }
+
+    .sobre-nosotros p {
+        font-size: 16px;
+    }
+}
+
+
+/*formulario*/
+
+form {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset {
+    background-image: url("../imagenes/fondo-negro.png");
+    border: 1px solid #d1d9e6;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+    width: 45%;
+}
+
+legend {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f7fafc;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3182ce;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2b6cb0;
+}
+
+/* Estilo para las opciones de selección */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+/* Espaciado entre secciones */
+fieldset > label {
+    margin-top: 10px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1.2em;
+    }
+}
+footer {
+    background-color: #333333b0; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Espaciado interno */
+    font-size: 0.9em; /* Tamaño de texto pequeño */
+}
+/* Enlaces dentro del pie de página */
+footer a { 
+    color: #ddd; /* Color de texto gris claro */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Efecto hover en los enlaces del pie de página */
+footer a:hover {
+    color: #fff; /* Cambia el color a blanco cuando el cursor pasa por encima */
+}

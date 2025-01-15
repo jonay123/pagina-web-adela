@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfumes de Hombre</title><!--Título de la página que aparecerá en la pestaña del navegador-->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
     <header><!-- Encabezado de la página con el logo y el menú de navegación -->
         <div class="logo">
-            <img src="imagenes\logo.png" alt="Logo de la página" class="logo">
+            <img src="../imagenes\logo.png" alt="Logo de la página" class="logo">
             <h1>Gipsy Arome</h1>
         </div>
-        <nav class="barra-navegacion"><!-- menú de navegación para enlazar las demás páginas-->
-            <ul>
-                <a href="inicio.html">INICIO</a>
-                <a href="mujer.html">MUJER</a>
-                <a href="hombre.html">HOMBRE</a>
-                <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-                <a href="contacto.html">CONTACTO</a>
-            </ul>
-        </nav>
+       <label class="nav-toggle">
+        <input type="checkbox" id="menu-input" class="nav-input">
+    
+       </label>
+       <ul class="barra-navegacion">
+        <li class="nav-item"> <a href="../index.html" class="nav-link">INICIO</a></li>
+        <li class="nav-item"> <a href="paginas/" class="nav-link">INICIAR SECCIÓN / REGISTRARSE</a></li>   
+        <li class="nav-item"> <a href="hombre.html" class="nav-link">HOMBRE</a></li>
+        <li class="nav-item"> <a href="mujer.html" class="nav-link">MUJER</a></li>
+        <li class="nav-item"> <a href="sobrenosotros.html" class="nav-link">SOBRE NOSOTROS</a></li>
+        <li class="nav-item"> <a href="contacto.html" class="nav-link">CONTACTO</a></li>
+       </ul>
     </header>
     <main><!--En este main ehemos creado un section para clasificar cada perfume en un article-->
-        <h1>Perfumes Hombre</h1> 
+        <h1 class="titulo-pagina-mujer">Perfumes Hombre</h1> 
         <section>
             <!-- Primer perfume -->
             <article>
                 <span class="etiqueta-oferta">¡Oferta!</span>
-                <img class="imagen-producto"src="imagenes\9-Pm-hombre.webp" alt="9AM de Afnan Perfumes">
+                <img class="imagen-producto"src="../imagenes\9-Pm-hombre.webp" alt="9AM de Afnan Perfumes">
                 <h3>9AM de Afnan Perfumes</h3>
-                <p>Perfumes Hombre</p>
+                <p class="perfumes-de">Perfumes Hombre</p>
                 <p class="precio"><!--aquí hemos creado dos span para hacer precio antiguo y actual-->
                     <span class="precio-original">52,00 €</span>
                     <span class="precio-oferta">48,00 €</span>
@@ -39,9 +42,9 @@
             <!-- Segundo perfume perfume -->
             <article>
                 <span class="etiqueta-oferta">¡Oferta!</span>
-                <img class="imagen-producto"src="imagenes\Aether.webp" alt="Aether de French Avenue">
+                <img class="imagen-producto"src="../imagenes\Aether.webp" alt="Aether de French Avenue">
                 <h3>Aether de French Avenue</h3>
-                <p>Perfumes Hombre</p>
+                <p class="perfumes-de">Perfumes Hombre</p>
                 <p class="precio"><!--aquí hemos creado dos span para hacer precio antiguo y actual-->
                     <span class="precio-original">56,00 €</span>
                     <span class="precio-oferta">51,00 €</span>
@@ -50,9 +53,9 @@
             <!-- tercer perfume -->
             <article>
                 <span class="etiqueta-oferta">¡Oferta!</span>
-                <img class="imagen-producto"src="imagenes\hawas.webp" alt="Hawas Ice for Him de Rasasi">
+                <img class="imagen-producto"src="../imagenes\hawas.webp" alt="Hawas Ice for Him de Rasasi">
                 <h3>Hawas Ice for Him de Rasasi</h3>
-                <p>Perfumes Hombre</p>
+                <p class="perfumes-de">Perfumes Hombre</p>
                 <p class="precio"><!--aquí hemos creado dos span para hacer precio antiguo y actual-->
                     <span class="precio-original">84,00 €</span>
                     <span class="precio-oferta">79,00 €</span>
@@ -61,9 +64,9 @@
             <!-- cuarto perfume -->
             <article>
                 <span class="etiqueta-oferta">¡Oferta!</span>
-                <img class="imagen-producto"src="imagenes\Al-Nashama-hombre.webp" alt="Al Nashama Caprice de Lattafa Perfumes">
+                <img class="imagen-producto"src="../imagenes\Al-Nashama-hombre.webp" alt="Al Nashama Caprice de Lattafa Perfumes">
                 <h3>Al Nashama Caprice de Lattafa Perfumes</h3>
-                <p>Perfumes Hombre</p>
+                <p class="perfumes-de">Perfumes Hombre</p>
                 <p class="precio"><!--aquí hemos creado dos span para hacer precio antiguo y actual-->
                     <span class="precio-original">44,00 €</span>
                     <span class="precio-oferta">40,00 €</span>
@@ -72,9 +75,9 @@
             <!-- quinto perfume -->
             <article>
                 <span class="etiqueta-oferta">¡Oferta!</span>
-                <img class="imagen-producto"src="imagenes\asad-lattafa-hombre.webp" alt="Asad de Lattafa Perfumes">
+                <img class="imagen-producto"src="../imagenes\asad-lattafa-hombre.webp" alt="Asad de Lattafa Perfumes">
                 <h3>Asad de Lattafa Perfumes</h3>
-                <p>Perfumes Hombre</p>
+                <p class="perfumes-de">Perfumes Hombre</p>
                 <p class="precio"><!--aquí hemos creado dos span para hacer precio antiguo y actual-->
                     <span class="precio-original">36,00 €</span>
                     <span class="precio-oferta">32,00 €</span>
