@@ -15,6 +15,8 @@ body {
     min-height: 100vh; /* Asegura que el cuerpo ocupe toda la ventana */
     display: flex;
     flex-direction: column;
+    overflow-x: hidden; /* Evita desbordamientos horizontales */
+    width: 100%;
 }
 
 /* ========================================= */
@@ -103,7 +105,7 @@ footer a:hover {
 /* SOBRE NOSOTROS                         */
 /*========================================*/
 .sobre-nosotros {
-    padding: 30px;
+    
     border-radius: 8px;
     margin-bottom: 30px;
 }
@@ -117,15 +119,15 @@ footer a:hover {
 }
 
 .sobre-nosotros p {
-    font-size: 18px;
+    margin: 0 auto;
     margin-bottom: 50px;
     max-width: 70%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     justify-content: center;
-    align-items: center;
-    margin-left: 220px;
+    
+    
     color: #b6b6b6;
     
 }
@@ -134,10 +136,11 @@ footer a:hover {
 .nosotros {
     background-image: url("../imagenes/fondo-negro.png");
     color: white;
-    padding: 60px 20px;
+    padding: 60px;
     text-align: center;
     border-radius: 8px;
     margin-bottom: 2px;
+    width: 100%;
 }
 
 .nosotros h1 {
@@ -237,13 +240,148 @@ fieldset > label {
     margin-top: 10px;
 }
 
-/* Ajustes responsivos */
-@media (max-width: 768px) {
-    fieldset {
-        padding: 15px;
-    }
+/* ========================================= */
+/* MEDIA QUERIES                             */
+/* ========================================= */
 
-    legend {
-        font-size: 1.2em;
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 669px) {
+    header{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        --icon-toggle-menu: url("../imagenes/menu.jpg");
+        --transform-menu-show: translate(-100%);
+       flex-direction: row;
+       
     }
+    header:has(.nav-input:checked){
+        --icon-toggle-menu: url("../imagenes/menuCerrar.jpg");
+        --transform-menu-show: translate(0%);
+       }
+       
+    .logo, .nav-toggle{
+        z-index: 10;
+    }
+  .logo, img{
+    height: 10rem;
+    width: 10rem;
+    margin-right: 10rem;
+  }
+     .nav-toggle{
+        
+        right: 10px;
+        position: absolute;
+        
+        width: 30px;
+        height: 30px;
+        background-image: var(--icon-toggle-menu);
+        background-size: cover;
+        
+        transition: background-image .5s;
+        
+    }
+    .nav-input{
+        width: 40px;
+        height: 40px;
+        display: none;
+    }
+    
+  
+       
+   .barra-navegacion{
+    transform: var(--transform-menu-show);
+    list-style: none;
+    color: black;
+    
+    display: grid !important;
+    
+    position: fixed;
+    place-content: center;
+    gap: 2rem;
+    text-align: center;
+    background-color: white;
+    inset: 0;
+    padding: 0 5% ;
+    
+    transition: .5s transform ;
+   
+   }
+
+   .banner{
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+
+   }
+   .banner h2{
+    font-size: 1.2rem;
+   }
+   .eslogan{
+    font-size: 1.2rem;
+    padding: 0.5px 0.5px;
+   }
+   .breve-introduccion{
+    margin-top: -10rem;
+   }
+   
+}
+
+
+
+/* Para pantallas medianas (tablets) */
+
+@media (min-width: 670px) and (max-width: 1024px) {
+   header{
+    width: 100%;
+    display: grid !important;
+   }
+   
+   header h1{
+    
+    font-size: 2rem;
+   }
+   .barra-navegacion{
+    font-size: 0.9rem;
+    width: 100%;
+    
+   }
+  .nav-toggle{
+    display: none;
+  }
+   .banner{
+    width: 90%;
+    height: 35rem;
+    padding: -20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    margin-right: 0;
+   
+   }
+    .banner h2{
+        font-size: 2rem;
+    }
+   .categoria-mujer, .categoria-hombre{
+    height: 390px;
+    
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);;
+   }
+   .nosotros{
+    width: 100%;
+   }
+.etiqueta-oferta{
+    transform: translate(100%, -700%);
+   
+}
+
+.sobre-nosotros{
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
 }
