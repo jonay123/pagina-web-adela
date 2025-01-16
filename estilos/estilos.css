@@ -1,72 +1,65 @@
-/* Reset general: elimina márgenes, rellenos y establece un modelo de caja consistente */
-
-
-html, body {
+/*=========================================
+  ESTILOS GENERALES
+=========================================*/
+* {
+    box-sizing: border-box;
+}
+/* ========================================= */
+/* BODY                                      */
+/* ========================================= */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffffb4;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================= */
+/* HEADER                                    */
+/* ========================================= */
+header {
+    background-color: rgb(221, 228, 233);
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif; /* Fuente predeterminada */
-    color: #000000; /* Color del texto */
-   
-}
-/* Estilo general para el cuerpo del documento */
-header{
-    header {
-        background-color: #ffffff36; /* Fondo blanco semi-transparente */
-        color: #000000; /* Texto negro */
-        display: flex; /* Uso de flexbox para organizar contenido en fila */
-        justify-content: space-between; /* Espacio uniforme entre elementos */
-        align-items: center; /* Centra elementos verticalmente */
-        flex-direction: column;
-        width: 100%;
-    }
-   padding-bottom: 2rem;
+    padding: 1rem 2rem;
 }
 
-/* Encabezado: estilos generales del header */
 ul.barra-navegacion {
-    
-    list-style-type: none; /* Quita los puntos de la lista */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Alinea horizontalmente */
+    display: flex;
     justify-content: center;
     font-weight: bold;
-    
-  }
-  
-  ul.barra-navegacion li {
-    margin: 0 10px; /* Espaciado entre los elementos */
-    margin-top: 1rem;
-   
-    
-  }
-  
-  ul.barra-navegacion a {
-    
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: black; /* Ajusta el color del texto */
-    padding: 8px 12px; /* Espaciado interno */
-    border-radius: 4px; /* Bordes redondeados */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Animación suave */
-    
-   
-  }
-
-/* Logo dentro del encabezado */
-.logo img {
-    max-width: 100px; /* Tamaño máximo del logo */
-    height: auto; /* Mantiene la proporción original */
-    border-radius: 50%; /* Hace que el logo sea redondo */
-    overflow: hidden; /* Evita que contenido exceda los bordes redondeados */
-    text-align: right; /* Alinea el texto del logo a la derecha */
 }
-/* Logo: configuración de su disposición */
-.logo {
-    display: flex; /* Utiliza flexbox para colocar logo y texto en una línea */
-    align-items: center; /* Alinea verticalmente el logo y el texto */
-    
+
+ul.barra-navegacion li {
+    margin: 0 10px;
+}
+
+ul.barra-navegacion a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul.barra-navegacion a:hover {
+    background-color: #9badd4;
+    color: white;
+}
+
+
+main {
+    flex: 1; /* Hace que el contenido principal crezca para empujar el footer hacia abajo */
 }
 
 /* Imagen del logo: ajustes de tamaño y estilo */
@@ -76,16 +69,39 @@ ul.barra-navegacion {
     border-radius: 50%; /* Hace que el logo sea redondo */
     margin-right: 10px; /* Espacio entre el logo y el texto */
 }
-ul.barra-navegacion a:hover {
-    background-color: #C9A270; /* Champán oscuro */
-    color: white; /* Opcional: Cambia el color del texto */
-  }
+.logo {
+    display: flex;
+    align-items: center;
+}
 
   .nav-input{
     display: none;
   }
-/* Título del encabezado */
 
+/* ========================================= */
+/* FOOTER                                    */
+/* ========================================= */
+footer {
+    background-color: #333333b0; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Espaciado interno */
+    font-size: 0.9em; /* Tamaño de texto pequeño */
+}
+/* Enlaces dentro del pie de página */
+footer a { 
+    color: #ddd; /* Color de texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Efecto hover en los enlaces del pie de página */
+footer a:hover {
+    color: #475cbd; /* Cambia el color a blanco cuando el cursor pasa por encima */
+}
+
+/*=========================================
+  BANNER PRINCIPAL
+=========================================*/
 
 /* Banner principal de la página */
 .banner {
@@ -176,17 +192,17 @@ ul.barra-navegacion a:hover {
 /* Fondo específico para la categoría de mujer */
 .categoria-mujer {
     background-image: url("../imagenes/mujer.avif");
-    box-shadow: 11px 11px 11px rgba(0, 0, 0, 0.4);
+    box-shadow: 11px 11px 11px rgba(7, 66, 175, 0.4);
 }
 
 /* Fondo específico para la categoría de hombre */
 .categoria-hombre {
     background-image: url("../imagenes/la-perfumeria-arabe-superando-a-la-tradicional-con-estilo-y-fragancia.webp");
-    box-shadow: 11px 11px 11px rgba(0, 0, 0, 0.1);
+    box-shadow: 11px 11px 11px rgba(7, 66, 175, 0.4);
 }
 
 /* Estilo de los textos destacados dentro de las categorías */
-.categoria-mujer h3{
+.categoria-mujer h3, .categoria-hombre h3 {
     font-size: 1.5em; /* Tamaño del texto */
     color: #000000; /* Texto negro */
     background-color: #ffffff53; /* Fondo semi-transparente */
@@ -195,19 +211,13 @@ ul.barra-navegacion a:hover {
     display: inline-block;
     border-radius: 8px; /* Bordes redondeados */
 }
-.categoria-hombre h3 {
-    font-size: 1.5em;
-    color: #000000;
-    background-color: #ffffff4e;
-    margin-top: 10px; 
-    padding: 5px 10px;
-    display: inline-block;
-    border-radius: 8px;  
-}
+
 .frase-categoria{
     background-color: #ffffff4e;
     border-radius: 8px; 
     font-size: 1.5em; /* Tamaño del texto */
+    margin-inline: 75px;
+    
 }
 /* Botón de acción dentro de las categorías */
 .boton {
@@ -237,27 +247,6 @@ section {
     padding: 20px; /* Espaciado interno */
 }
 
-/* Pie de página: estilos generales */
-footer {
-    background-color: #333; /* Fondo gris oscuro */
-    color: #fff; /* Texto blanco */
-    text-align: center; /* Texto centrado */
-    padding: 20px; /* Espaciado interno */
-    font-size: 0.9em; /* Tamaño de texto pequeño */
-    width: 100%;
-}
-/* Enlaces dentro del pie de página */
-footer a { 
-    color: #ddd; /* Color de texto gris claro */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-}
-
-/* Efecto hover en los enlaces del pie de página */
-footer a:hover {
-    color: #fff; /* Cambia el color a blanco cuando el cursor pasa por encima */
-}
-
-
 
 
 
@@ -276,7 +265,7 @@ footer a:hover {
 
 
 
-.titulo-pagina-mujer {
+.titulo-pagina-mujer, {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -509,6 +498,4 @@ p {
 .etiqueta-oferta{
     transform: translate(100%, -700%);
    
-}
-
 }
