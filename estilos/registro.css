@@ -98,6 +98,20 @@ footer a {
 footer a:hover {
     color: #475cbd; /* Cambia el color a blanco cuando el cursor pasa por encima */
 }
+/*=========================================*/
+/* Estilo para el encabezado de la portada */
+/*=========================================*/
+
+.nosotros {
+    background-image: url("../imagenes/fondo-negro.png");
+    color: white;
+    font-size: 28px;
+    padding: 67px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    
+}
 
 /* ========================================= */
 /* Formulario                                */
