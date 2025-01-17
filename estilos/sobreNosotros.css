@@ -191,7 +191,7 @@ input[type="tel"],
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: -10px;
     border: 1px solid #cbd5e0;
     border-radius: 4px;
     font-size: 1em;
