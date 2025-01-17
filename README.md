@@ -3,9 +3,12 @@ Hemos vueto a "rediseñar" nuestra página web, haciendo muchos cambios, añadie
 ## Propósito de los Formularios
 
 ### 1. Formulario de Registro
-El formulario de registro está diseñado para que los usuarios creen una cuenta en la plataforma.Incluye un botón para mostrar u ocultar contraseña y
-
-También incluye una opción para aceptar las políticas de privacidad.
+El formulario de registro está diseñado para que los usuarios creen una cuenta en la plataforma.
+También incluye una opción para aceptar las políticas de privacidad.Incluye:
+- **Información Básica del Usuario:** Nombre, apellidos, correo electrónico y teléfono.
+- **Fecha de Nacimiento: Personalización de la experiencia.
+- **País: Ajustar preferencias según la ubicación.
+- **Un botón para mostrar u ocultar contraseña hecho con un Script.
 
 ---
 
