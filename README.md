@@ -103,5 +103,6 @@ Este formulario está orientado a recibir retroalimentación de los usuarios sob
 El equipo trabajó de manera colaborativa para desarrollar formularios funcionales y atractivos, enfocados en mejorar la experiencia del usuario y cumplir con los estándares de calidad. Gracias a las contribuciones individuales, el proyecto es sólido, eficiente y centrado en las necesidades de los usuarios.
 
 
- 
 Previsualiza nuestra pagina web [aquí](https://jonay123.github.io/pagina-web-adela/)
+
+
