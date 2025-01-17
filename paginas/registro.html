@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
+    <title>Regístrate</title>
     <link rel="stylesheet" href="../estilos/registro.css">
 </head>
 <body>
-    <header>
+    <header><!-- Encabezado de la página con el logo y el menú de navegación -->
+        
         <div class="logo">
             <img src="../imagenes/logo.png" alt="Logo de la página" class="logo">
             <h1>Gipsy Arome</h1>
         </div>
-        <ul class="barra-navegacion">
-            <li class="nav-item"><a href="../index.html" class="nav-link">INICIO</a></li>
-            <li class="nav-item"><a href="registro.html" class="nav-link">INICIAR SECCIÓN / REGISTRARSE</a></li>
-            <li class="nav-item"><a href="hombre.html" class="nav-link">HOMBRE</a></li>
-            <li class="nav-item"><a href="mujer.html" class="nav-link">MUJER</a></li>
-            <li class="nav-item"><a href="sobrenosotros.html" class="nav-link">SOBRE NOSOTROS</a></li>
-            
-        </ul>
+       <label class="nav-toggle">
+        <input type="checkbox" id="menu-input" class="nav-input">
+       </label>
+       <ul class="barra-navegacion">
+        <li class="nav-item"> <a href="../index.html" class="nav-link">INICIO</a></li>
+        <li class="nav-item"> <a href="login.html" class="nav-link"style="color:rgba(40, 90, 230, 0.582)">INICIA SESIÓN</a></li>  
+        <li class="nav-item"> <a href="registro.html" class="nav-link" style="color:rgba(40, 90, 230, 0.582)">REGÍSTRATE</a></li>       
+        <li class="nav-item"> <a href="hombre.html" class="nav-link">HOMBRE</a></li>
+        <li class="nav-item"> <a href="mujer.html" class="nav-link">MUJER</a></li>
+        <li class="nav-item"> <a href="sobrenosotros.html" class="nav-link">SOBRE NOSOTROS</a></li>
+        
+       </ul>
     </header>
 
     
@@ -34,13 +39,14 @@
 
                 <form class="form-row">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Introduzca su nombre">
 
                     <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Introduzca su apellido">
                 
                     <label for="telefono">Teléfono móvil:</label>
-                    <input type="tel" id="telefono" name="telefono" pattern="^\+?\d{1,4}?[\d\s\-]{7,15}$" placeholder="Ejemplo: +34 612 345 678" required>
+                    <input type="tel" id="telefono" name="telefono" required pattern="^\+?\d{1,4}?[\d\s\-]{7,15}$" placeholder="Ejemplo: +34 612 345 678" 
+                    title="Debe tener entre 7 y 15 dígitos y puede contener espacios, guiones y el signo + al principio.">
 
                     <label for="fecha_nacimiento">Fecha de nacimiento:</label>
                     <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
@@ -58,16 +64,19 @@
                     <label for="correo">Correo electrónico:</label>
                     <input type="email" id="correo" name="correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required placeholder="correo@dominio.com">
 
+                    <!-- Campo de Contraseña -->
                     <label for="contraseña">Contraseña:</label>
+                    
                     <div class="password-wrapper">
-                        <input type="password" id="contraseña" name="contraseña" required>
-                        <button type="button" class="eye-btn" onclick="togglePassword('contraseña', this)">👁️</button>
+                    <input type="password" id="contraseña" name="contraseña" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" 
+                    placeholder="8 caracteres,1 mayúscula, 1 minúscula,1 número y 1 carácter especial."
+                            title="Debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula, un número y un carácter especial (!@#$%^&*).">
+                    <button type="button" class="eye-btn" onclick="togglePassword('contraseña', this) "aria-label="Mostrar u ocultar contraseña">👁️</button>
                     </div>
 
-                <!-- Campo de Confirmar Contraseña -->
-        
+                    <!-- Campo de Confirmar Contraseña -->
                     <label for="confirmar_contraseña">Confirmar Contraseña:</label>
-                    <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required>
+                    <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required placeholder="Introduzca su contraseña de nuevo">
 
                     <label>
                     <input type="checkbox" id="politicas" name="politicas" required>
