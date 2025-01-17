@@ -98,6 +98,11 @@ Este formulario está orientado a recibir retroalimentación de los usuarios sob
 - Corrección de errores globales en HTML y CSS.
 
 ---
+## Imagenes de nuestro proyecto
+
+![Inicio y 8 páginas más - Personal_ Microsoft​ Edge 17_01_2025 16_09_34](https://github.com/user-attachments/assets/5b5e9943-0027-47dd-ae75-18cc793980d6)
+
+
 
 ## Conclusión
 El equipo trabajó de manera colaborativa para desarrollar formularios funcionales y atractivos, enfocados en mejorar la experiencia del usuario y cumplir con los estándares de calidad. Gracias a las contribuciones individuales, el proyecto es sólido, eficiente y centrado en las necesidades de los usuarios.
