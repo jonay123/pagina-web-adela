@@ -1,5 +1,8 @@
 Hemos vueto a "rediseñar" nuestra página web, haciendo muchos cambios, añadiendo páginas nuevas y eliminando otras.Así como volviedo a hacer los CSS y reestructurandolos y dividiendolos en más páginas.También hemos hecho muchos cambios visuales de diseño.
 
+
+Previsualiza nuestra pagina web [aquí](https://jonay123.github.io/pagina-web-adela/)
+
 ## Propósito de los Formularios
 
 ### 1. Formulario de Registro
