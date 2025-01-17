@@ -256,7 +256,7 @@ fieldset > label {
         --icon-toggle-menu: url("../imagenes/menu.jpg");
         --transform-menu-show: translate(-100%);
        flex-direction: row;
-    }
+    
 
     }
     header:has(.nav-input:checked){
@@ -338,7 +338,7 @@ fieldset > label {
    header{
     width: 100%;
     display: grid !important;
-   }
+   
 }
    header h1{
     
