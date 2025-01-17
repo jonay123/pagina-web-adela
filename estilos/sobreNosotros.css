@@ -338,7 +338,7 @@ fieldset > label {
     width: 100%;
     display: grid !important;
    }
-   
+}
    header h1{
     
     font-size: 2rem;
